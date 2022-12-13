@@ -1,29 +1,19 @@
-# Next.js + Jest
-
-This example shows how to configure Jest to work with Next.js.
-
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
-
-## How to Use
-
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
-
-In your terminal, run the following command:
-
-```bash
-npx create-next-app --example with-jest with-jest-app
-```
-
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
-
-```bash
-pnpm create next-app --example with-jest with-jest-app
-```
-
-## Run Jest Tests
-
-```bash
-npm test
-```
+# QuantifiedSelf - coordinated collected data
+## System Requirements
+### Functional Requirements
+- Data
+    - Store data
+- Interface
+    - Interfaces to add data
+    - Interfaces to query data
+- Types
+    - Easily & rapidly introduce new recordtypes
+    - New recordtypes integrate with old tools
+### Non-Functional Requirements
+- Hopefully, run on Thufir
+## What restricts the scope of this project?
+- Data follows causality
+    - Each datum includes a timestamp of the last instant it could depend on
+    - The only reason to modify data in place is to correct a mistake
+- All entries are descriptive
+    - No part of QS makes assignments or describes expectations
