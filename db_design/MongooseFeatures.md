@@ -1,4 +1,5 @@
 # Schema
+https://mongoosejs.com/docs/guide.html
 Schemas define what the data in a collection will look like.
 ## Methods
 Schemas can define methods, statics, and query helper functions which will be available on any model using that schema.
