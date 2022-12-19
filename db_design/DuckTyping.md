@@ -29,3 +29,10 @@ maxCast<Artifact>({"name":"skull", "count":11}) // Returned type is ArtifactGrou
 ```
 
 Restricting this to interfaces is probably not the right call. I'd really like something where a class describes a particular query which rests on some data existing (the intersection), then there are subclasses which match particular extersections; each class would function as (eg) a React component, and each would render all their relevant content.
+
+## Mongoose and Duck Typing
+### Descriminators for Inheritance
+Mongoose supports [a schema inheritance system](MongooseFeatures.md#descriminators). If I really carefully manage my types and schemas, and if all incoming data gets a properly constructed Mongoose schema (properly constructed not yet defined), and if Mongoose automatically assigns query results to their most specific (as opposed to most general) model (a question about how descriminators work), Mongoose will route records correctly. WIth pure inheritance, the Mongoose-internal schema requires treelike inheritance (acyclic single-parent digraph) (this is also strictly true in Typescript).
+
+### Descriminators + Populate for Composition
+Composition, as opposed to inheritance, doesn't ask for or enforce treelike structure, because a type can enact composition on multiple other types through reference.

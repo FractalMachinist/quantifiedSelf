@@ -38,5 +38,9 @@ Discriminators are a schema inheritance mechanism. They enable you to have multi
 
 A common model is defined across the collection, and other models are constructed to inherit from that model and exist in the same collection, but with separate models based on extending schemas of their own.
 
+## Populate
+https://mongoosejs.com/docs/populate.html
+'Populate' is a join to documents in another collection.
+
 # Model
 Models provide functionality for querying and interacting with data in a collection.
